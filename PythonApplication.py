@@ -27,3 +27,14 @@ print(full_name.title())
 favourite_language = 'python '
 print(favourite_language.rstrip()) #Jest to zabieg tymczasowy, jest jeszcze lstrip
 favourite_language = favourite_language.strip() # Za to ten zabieg stały
+
+
+#int / int  = float
+#int / float = float nevetheless
+universe_age = 14_000_000_000
+print(universe_age)
+
+x, y, z = 1, 2, 3
+print(x, y, z)
+
+MAX_CONNECTIONS = 5000 # nazwy zapisane wielkimi literami są traktowane jako stałe! 
