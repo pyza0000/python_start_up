@@ -104,3 +104,49 @@ cars.reverse()
 
 #określanie wielkości listy można za pomocą: //
 print(len(bicycles))
+
+
+
+
+#petla for 
+for bicycle in bicycles:
+    print(f"Modele rowerów dostępny na rynku {bicycle.title()}")
+    print(f"Z niecierpliwością czekam na twój kolejny występ, {bicycle.title()}.\n")
+
+for value in range(1,6):
+    print(value)
+
+numbers = list(range(2,11,2))
+print(numbers)
+
+#obliczanie drugiej potęgi dla liczb całkowitych z zakresu od 1 do 10
+liczby = []
+for squares in range(1,11):
+    wynik = squares**2
+    liczby.append(wynik)
+    #liczby.append(squares**2) // skrócona wersja 
+print(liczby)
+
+wniosek = [cyfry**2 for cyfry in range(1,11)] # lista składane-> list comprehension
+print(wniosek)
+
+
+print(min(liczby)) #wyciąga najmniejszą liczbę
+print(max(liczby)) #wycigą największą liczbę
+print(sum(liczby)) #sumuje wszystkie liczby z listy
+
+
+for wycinek in bicycles[:3]:#wycinek listy // praca na określonych indeksach do 3 ale zawsze jeden mniejszy
+    print(wycinek)
+
+skopiowana_lista = cars[:]#kopiowanie listy za pomocą wycinka
+print(skopiowana_lista)
+
+wartosci = (250, 500)#krotka czyli lista ale ze stałymi wartościami, zawsze  w okrągłym nawiasie  i nawet przy jednej wartości musi być ,
+print(wartosci[0]) 
+print(wartosci[1])
+
+#nie mozna modyfikować krotki, ale istnieje możliwość przypisania zupełnie nowej wartości zmiennej przechowującej tę krotkę
+wartosci = (200,400)
+print(wartosci[0]) 
+print(wartosci[1])
