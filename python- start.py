@@ -150,3 +150,18 @@ print(wartosci[1])
 wartosci = (200,400)
 print(wartosci[0]) 
 print(wartosci[1])
+
+
+
+
+
+
+
+
+
+requested_toppings = ['ananas', 'double cheese']
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        print(f"Dodaje {requested_toppings}")
+    else:
+        print("Czy na pewno ma być pizza bez dodatków?")
